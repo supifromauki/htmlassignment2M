@@ -1,0 +1,125 @@
+/* body */
+.ms-body{
+    width: 93%;
+    margin: 0 auto;
+}
+
+/* header */
+
+.navbar{
+    height:10px;
+    margin-bottom: 5px;
+}
+
+.navbar-collapse{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.ms-logo{
+    padding-bottom: 60px;
+}
+
+.ms-allmicrosoft{
+    margin-left: 400px;
+}
+
+/* Red section */
+
+*.ms-linksection{
+    background-color: brown;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ms-link{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    display: inline-block;
+    padding-top: 9px;
+    text-decoration: underline;
+}
+
+/* section 3 with courasel */
+
+.slide{
+    color: black;
+    size: 50%;
+}
+
+.carousel-control.right{
+    background-image: none;
+}
+.carousel-control.left{
+    background-image: none;
+}
+
+.item{
+    position: relative;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 150px;
+    left: 80px;
+}
+.caption2{
+    top: 0px!important;
+    }
+.carousel-caption h3{
+    text-align: left;
+    color: black;
+}
+
+.carousel-caption p{
+    text-align: left;
+    color: black;
+}
+.carousel-caption button{
+    color: white;
+    background: brown;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    position: absolute;
+    left: 0;
+}
+
+/* section3 */
+.ms-sec3{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 48px;
+    margin-left: -0.1em;
+}
+.ms__sec3-icon{
+   float: left;
+   height: 20px;
+   width: 20px;
+   margin-right: 8px;
+   margin-bottom: 0;
+
+}
+.ms__sec3--link{
+    display: inline-block;
+    padding: 12px 6px;
+    min-height: 44px;
+    color: inherit;
+}
+.ms__sec3--text{
+    float:left;
+    font-weight: 600;
+    text-align: left;
+    margin: auto;
+    max-height: 60px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: normal;
+    margin-top: -4px;
+    position: relative;
+}
