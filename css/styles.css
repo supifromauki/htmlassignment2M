@@ -27,7 +27,7 @@
 
 *.ms-linksection{
     background-color: brown;
-    height: 40px;
+    height: 41px;
     text-align: center;
     cursor: pointer;
 }
@@ -38,7 +38,6 @@
     text-align: center;
     display: inline-block;
     padding-top: 9px;
-    text-decoration: underline;
 }
 
 /* section 3 with courasel */
@@ -123,3 +122,154 @@
     margin-top: -4px;
     position: relative;
 }
+
+/* section cards */
+
+.ms-cardbody{
+    margin-top: 48px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.ms-card{
+      display: block;
+      border: none;
+      width: 285.531px;    
+}
+
+.card-body{
+    padding-left: 0px;
+
+}
+
+.ms-cardlink{
+    color: brown;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card-title{
+    margin-top: 37px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.card-text{
+    font-size: 15px;
+}
+
+.ms-cardheading{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* still section */
+
+.ms-stillsection{
+    cursor: pointer;
+}
+
+.ms-stillsection__p1{
+    color: green!important;
+    background-color: white; 
+    height: 35px; 
+    width: 130px; 
+    padding-top: 7px;
+    margin-bottom: -10px;
+}
+
+.ms-stillsection__h3{
+    margin-bottom: 15px;
+}
+
+.ms-stillsection__p2{
+    margin-bottom: 24px;
+}
+
+.ms-follow{
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.ms-follow__img{
+    margin-left: 10px;
+}
+
+
+/* footer */
+
+.ms-footer{
+    background-color: rgb(242, 242, 242);
+    height: 396px;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-top: 36px;
+}
+
+.ms-footer__heading{
+    font-size: 15px;
+    padding-bottom: 4px;
+    font-weight: 600;
+    line-height: 20px;
+    color: rgb(97, 97, 97);
+}
+
+.ms-footer__list{
+    padding-left: 0px;
+}
+
+.ms-footer__link{
+    color: rgb(97, 97, 97);
+    font-size: 11px;
+    line-height: 35px;
+    text-decoration-thickness: auto ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 812px){
+    .ms-body{
+        width: 100%;
+        height: 500px;
+    }
+    .container-fluid{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .ms-linksection{
+
+        height:58px;
+    } 
+ }
