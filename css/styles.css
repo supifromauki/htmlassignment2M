@@ -19,13 +19,12 @@
     padding-left: 0px;
     padding-right: 0px;
 }
-.ms-logo{
-    padding-bottom: 60px;
-}
 
 .ms-allmicrosoft{
-    margin-left: 400px;
+    margin-left: 500px;
 }
+
+
 
 /* Red section */
 
@@ -43,6 +42,61 @@
     display: inline-block;
     padding-top: 9px;
 }
+
+
+/* stillsec */
+
+@media only screen and (max-width: 500px){
+
+    .ms-stillsection{
+        cursor: pointer;
+        width: min-content;
+    }
+    
+    .ms-stillsection__p1{
+        color: green!important;
+        background-color: white; 
+        height: 35px; 
+        width: 180px; 
+        padding-top: 7px;
+        margin-bottom: -10px;
+        margin-left: 100px;
+        font-size: 15px;
+    }
+    
+    .ms-stillsection__h3{
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .ms-stillsection__p2{
+        color: black;
+        text-align: center;
+        font-size: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .ms-stillsection__button{
+        color: white;
+        background: brown;
+        font-size: 15px;
+        padding: 10px 20px;
+        border: none;
+        position: absolute;
+        margin-left: 130px;
+    }
+    
+    .ms-stillsec{
+        background-color: #e6e6e6; 
+        height: 340px; 
+        padding-top: 100px;
+    }
+    }
+    
+    /* still section */
 
 /* section 3 with courasel */
 
