@@ -17,12 +17,21 @@
   <header class="ms-body">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
+        <button class="ms-header-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon togg"></span>
+        </button>
+        <button class="ms-header-search navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fas fa-search search"></span>
+        </button>
         <a class="navbar-brand ms-logo" href="#"><img src="images/logo.PNG" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler ms-header-cart" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fas fa-shopping-cart"></span>
+        </button>
+        <button class="navbar-toggler ms-header-user" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fas fa fa-user-plus"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-top: 10px;">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-xl-block">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Microsoft 365</a>
             </li>
@@ -59,7 +68,7 @@
     </nav>
   </header>
 
-  <section class="ms-body">
+  <section class="ms-body d-none d-xl-block">
     <div class="container-fluid">
       <div class="col-12 col-lg-12  ms-linksection">
           <a class="ms-link" href=""><span>Read how we're responding to COVID-19 outbreak,and get resources to help</span></a>
@@ -67,13 +76,27 @@
     </div>
   </section>
 
+  <section class="ms-body d-lg-none .d-xl-block">
+      <div class="col-12 col-lg-12  ms-linksection">
+          <a class="ms-link" href=""><span>Read how we're responding to COVID-19 outbreak,and get resources to help</span></a>
+      </div> 
+  </section>
+
   <section class="ms-body">
-    <div class="container-fluid d-none d-sm-block" > 
+    <div class="container-fluid d-none d-xl-block"> 
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li style="border-color: black;" data-target="#myCarousel" data-slide-to="0" class="active" ></li>
           <li style="border-color: black;" data-target="#myCarousel" data-slide-to="1"></li>
         </ol>
+        <!-- <div id="carouselButtons">
+          <button id="playButton" type="button" class="btn btn-default btn-xs">
+              <span class="glyphicon glyphicon-play"></span>
+           </button>
+          <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+              <span class="glyphicon glyphicon-pause"></span>
+          </button>
+      </div> -->
         <div class="carousel-inner">
           <div class="item active">
             <img src="images/1.png">
@@ -84,7 +107,7 @@
             </div>
           </div>
           <div class="item">
-            <img src="images/carousel2.png" alt="Chicago">
+            <img src="images/carousel2.png">
             <div class="carousel-caption caption2">
               <h3>Every moment matters</h3>
               <p>Stay connected all season with slim, stylish Surface laptop3</p>
@@ -92,11 +115,56 @@
             </div>
           </div>
         </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <a class="left carousel-control carousel-control-prev-icon" href="#myCarousel" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <a class="right carousel-control carousel-control-next-icon" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="d-none d-md-block d-lg-none"> 
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li style="border-color: black;" data-target="#myCarousel" data-slide-to="0" class="active" ></li>
+          <li style="border-color: black;" data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        <!-- <div id="carouselButtons">
+          <button id="playButton" type="button" class="btn btn-default btn-xs">
+              <span class="glyphicon glyphicon-play"></span>
+           </button>
+          <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+              <span class="glyphicon glyphicon-pause"></span>
+          </button>
+      </div> -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4HSlI?ver=561a&amp;q=0&amp;m=8&amp;h=609&amp;w=1083&amp;b=%23FFFFFFFF&amp;l=f&amp;x=0&amp;y=741&amp;s=1083&amp;d=609&amp;aim=true">
+            <div class="carousel-caption">
+              <h3>Surface pro 7</h3>
+              <p>Tick off your gift list with an ultra-light and verstile 2-in-1 device</p>
+              <button> Shop now ></button>
+            </div>
+          </div>
+          <div class="item">
+            <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4Gq2r?ver=50d8&amp;q=0&amp;m=8&amp;h=609&amp;w=1083&amp;b=%23FFFFFFFF&amp;l=f&amp;x=0&amp;y=731&amp;s=1101&amp;d=619&amp;aim=true">
+            <div class="carousel-caption caption2">
+              <h3>Every moment matters</h3>
+              <p>Stay connected all season with slim, stylish Surface laptop3</p>
+              <button> Shop now ></button>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control carousel-control-prev-icon" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control carousel-control-next-icon" href="#myCarousel" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -105,12 +173,8 @@
   </section>
   
   <section>
-    <div class="container-fluid d-block d-sm-none" > 
+    <div class=" d-block d-sm-none" > 
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li style="border-color: black;" data-target="#myCarousel" data-slide-to="0" class="active" ></li>
-          <li style="border-color: black;" data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
         <div class="carousel-inner">
           <div class="item active">
             <img src="images/1a.png">
@@ -138,17 +202,16 @@
           </div>
          </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <a class="left carousel-control carousel-control-prev-icon" href="#myCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <a class="right carousel-control carousel-control-next-icon" href="#myCarousel" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
   </section>
-
 
   <section class="ms-body">
     <div class="container">
@@ -182,13 +245,13 @@
       </div>
     </div>
   </section>
-
-  <section class="ms-body">
+  
+  <section class="ms-body ms-gap">
     <div class="container-fluid ms-cardbody">
       <div class="row">
         <div class="col-12 col-md-6 col-lg-3">
           <div class="card ms-card">
-            <img class="card-img-top" src="images/card1.webp" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="images/card1.webp" alt="Card image">
               <div class="card-body">
                 <h4 class="card-title">Microsoft 365</h4>
                 <p class="card-text">Premium Office apps, extra cloud storage, advanced security, and more – all in one convenient subscription.</p>
@@ -200,7 +263,7 @@
 
         <div class="col-12 col-md-6 col-lg-3">
           <div class="card ms-card">
-            <img class="card-img-top" src="images/card2.webp" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="images/card2.webp" alt="Card image">
             <div class="card-body">
               <h4 class="card-title">Your perfect match</h4>
               <p class="card-text">Make a powerful statement with Surface Book 3.</p>
@@ -211,7 +274,7 @@
         
         <div class="col-12 col-md-6 col-lg-3">
           <div class="card ms-card">
-            <img class="card-img-top" src="images/card3.webp" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="images/card3.webp" alt="Card image">
               <div class="card-body">
                 <h4 class="card-title">Xbox Game Pass Ultimate</h4>
                 <p class="card-text">Get your first 3 months of Xbox Game Pass Ultimate membership for Rs. 50. Now includes EA Play. New subscribers only.</p>
@@ -234,8 +297,7 @@
     </div>
   </section>
 
-
-  <section class="ms-body">
+  <section class="ms-body d-none d-xl-block">
     <div class="container-fluid ms-stillsection">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -253,9 +315,24 @@
     </div>
   </section>
 
+  <section class="ms-body d-none d-md-block d-lg-none ms-stillsection">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img class="imagewidth" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4Jl6U?ver=b979&amp;q=0&amp;m=8&amp;h=609&amp;w=1083&amp;b=%23FFFFFFFF&amp;l=f&amp;x=0&amp;y=741&amp;s=1083&amp;d=609&amp;aim=true">
+          <div class="carousel-caption">
+            <p class="text-center ms-stillsection__p1">Countdown sale</p>
+            <h3>Up to 50% off Xbox digital games</h3>
+            <p>Level up your savings with great deals on must-have games</p>
+            <button> Shop now ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <section class=" d-block d-sm-none container-fluid ms-stillsection ms-body">
-    <img src="images/stillpic.png">
+  <section class=" d-block d-sm-none ms-stillsection ms-body">
+    <img class="ms-stillsection__image" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4Jl6U?ver=b979&amp;q=0&amp;m=8&amp;h=303&amp;w=539&amp;b=%23FFFFFFFF&amp;l=f&amp;x=1126&amp;y=916&amp;s=772&amp;d=434&amp;aim=true">
   </section>
             
   <section class="d-block d-sm-none ms-stillsec">
@@ -265,14 +342,13 @@
     <button class="ms-stillsection__button"> Shop now ></button>
   </section>
 
-
   <section class="ms-body">
     <div class="container-fluid ms-cardbody">
       <h3 class="ms-cardheading">For business</h3>
       <div class="row">
         <div class="col-12 col-md-6 col-lg-3">
           <div class="card ms-card">
-            <img class="card-img-top" src="images/c1.PNG" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="images/c1.PNG" alt="Card image">
             <div class="card-body">
               <h4 class="card-title">Surface for Business</h4>
               <p class="card-text">No matter what you do, there’s a Surface to help you do it.</p>
@@ -283,7 +359,7 @@
               
         <div class="col-12 col-md-6 col-lg-3">
           <div class="card ms-card">
-            <img class="card-img-top" src="images/c2.PNG" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="images/c2.PNG" alt="Card image">
             <div class="card-body">
               <h4 class="card-title">Microsoft 365 for Business</h4>
               <p class="card-text">Stay a step ahead with powerful apps for productivity, connection and security.</p>
@@ -294,7 +370,7 @@
               
         <div class="col-12 col-md-6 col-lg-3">
           <div class="card ms-card">
-            <img class="card-img-top" src="images/c3.PNG" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="images/c3.PNG" alt="Card image">
             <div class="card-body">
               <h4 class="card-title">Resilience at work</h4>
               <p class="card-text">Keep your team connected, wherever they are, with Microsoft Teams.</p>
@@ -322,11 +398,10 @@
     <img class="ms-follow__img" src="images/twitter.PNG">
     <img class="ms-follow__img" src="images/utube.PNG">
   </div>
-              
-
-  <footer class="container-fluid">
-    <div class="row ms-footer">
-      <div class="col-md-4 col-lg-2">
+            
+  <footer class="container-fluid ms-footer">
+    <div class="row ">
+      <div class="col-md-4 col-lg-2 ms-footer__body">
         <div class="ms-footer__heading">What's new</div> 
           <ul type="none" class="ms-footer__list">
             <li ><a class="ms-footer__link" href="#">Microsoft 365</a> </li>
@@ -393,21 +468,22 @@
           <li ><a class="ms-footer__link" href="#">Security</a> </li>
         </ul>
       </div>
-              
-      <div class="container-fluid ms-footer__linkgap">
-        <i class="fa fa-globe" aria-hidden="true"></i>
-        <a class="ms-footer__link" href="#">English(India)</a>
-        <div class="d-block d-sm-none"><br></div>
-        <div class="d-none d-sm-block ms-footer__span"></div>
-        <a class="ms-footer__link" href="#">Contact Microsoft</a>
-        <a class="ms-footer__link ms-footer__last" href="#">Privacy</a>
-        <a class="ms-footer__link ms-footer__last" href="#">Terms of use</a>
-        <a class="ms-footer__link ms-footer__last" href="#">Trade marks</a>
-        <a class="ms-footer__link ms-footer__last" href="#">About our ads</a>
-        <span class="ms-footer__link ms-footer__last"> © Microsoft 2020</span>
+    </div>   
+      <div class="row ms-footer__linkgap">
+        <div class="col-12 col-md-2 col-lg-2">
+          <a class="ms-footer__iconlink" href=""><i class="fas fa-globe-americas"></i>English india</a>
+
       </div>
-              
-    </div>
+      <div class="col-12 col-md-10 col-lg-10 ">
+        <a class="ms-footer__last ms-footer-space"  href="#">Contact Microsoft</a>
+        <a class=" ms-footer__last" href="#">Privacy</a>
+        <a class=" ms-footer__last" href="#">Terms of use</a>
+        <a class=" ms-footer__last" href="#">Trade marks</a>
+        <a class=" ms-footer__last" href="#">About our ads</a>
+        <span class=" ms-footer__last"> © Microsoft 2020</span>
+      </div>
+      </div>     
+    
   </footer>
 
 </body>

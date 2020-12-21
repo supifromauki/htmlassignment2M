@@ -1,3 +1,4 @@
+
 /* body */
 @media screen and (min-width: 1025px){
 
@@ -9,6 +10,22 @@
 
 
 /* header */
+
+.navbar-toggler{
+    font-size: 17px;
+    border: none;
+  }
+  @media only screen and (max-width: 1024px){
+   .ms-logo{
+       
+   }
+  } 
+
+
+
+
+
+
 
 .navbar{
     height:10px;
@@ -99,6 +116,28 @@
     /* still section */
 
 /* section 3 with courasel */
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 40px;
+  width: 40px;
+  outline: black;
+  background-size: 50%, 50%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  margin-top: 220px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    width: 10px;
+    height: 10px;
+    margin-top: -10px;
+    font-size: 20px;
+    padding-right: 20px;
+}
 
 .slide{
     color: black;
